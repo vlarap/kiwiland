@@ -11,20 +11,17 @@
   if($fn_Funcion == 'InsertarReserva'){
     $json_Reserva = $_POST['json_Reserva'];
     //VERIFICAR DISPONIBILIDAD
-    $sql_VerificarDisponibilidad = "SELECT  COUNT(*) AS Contador
-                                    FROM    ".RES_RESERVAS."
-                                    WHERE   propiedad_Id = ".$json_Reserva['vli_PropiedadId']." AND
-                                            ((reserva_FechaDesde <= '".$json_Reserva['vld_ReservaFechaDesde']."' AND reserva_FechaHasta >= '".$json_Reserva['vld_ReservaFechaHasta']."')
-                                            OR reserva_HoraLlegada BETWEEN '".$json_Reserva['vld_ReservaHoraDesde']."' AND '".$json_Reserva['vld_ReservaHoraHasta']."')";
-                                            //OR reserva_FechaDesde BETWEEN '".$json_Reserva['vld_ReservaFechaDesde']."' AND '".$json_Reserva['vld_ReservaFechaHasta']."')";
+    //************************************************ */
+    // CONSULTA ORIGINAL QUE ARROJA ERROR DE DISPONBILIDAD POR CHOQUE DE HORARIOS
+    // SE DEBE REVISAR QUE SE PERMITA INGRESAR RESERVA SI LA FECHA + HORA DE LLEGADA ES > 
+    // A LA FECHA + HORA DE SALIDA DE LA ANTERIOR RESERVA DE LA MISMA PROPIEDAD
 
-                                            
-  // $sql_VerificarDisponibilidad = "SELECT  COUNT(*) AS Contador
-  // FROM    ".RES_RESERVAS."
-  // WHERE   propiedad_Id = ".$json_Reserva['vli_PropiedadId']." AND
-  //         ((reserva_FechaDesde <= '".$json_Reserva['vld_ReservaFechaDesde']."' AND reserva_FechaHasta >= '".$json_Reserva['vld_ReservaFechaHasta']."')
-  //         OR reserva_FechaHasta BETWEEN '".$json_Reserva['vld_ReservaFechaDesde']."' AND '".$json_Reserva['vld_ReservaFechaHasta']."'
-  //         OR reserva_FechaDesde BETWEEN '".$json_Reserva['vld_ReservaFechaDesde']."' AND '".$json_Reserva['vld_ReservaFechaHasta']."')";
+    $sql_VerificarDisponibilidad = "SELECT  COUNT(*) AS Contador
+    FROM    ".RES_RESERVAS."
+    WHERE   propiedad_Id = ".$json_Reserva['vli_PropiedadId']." AND
+            ((reserva_FechaDesde <= '".$json_Reserva['vld_ReservaFechaDesde']."' AND reserva_FechaHasta >= '".$json_Reserva['vld_ReservaFechaHasta']."')
+            OR reserva_FechaHasta BETWEEN '".$json_Reserva['vld_ReservaFechaDesde']."' AND '".$json_Reserva['vld_ReservaFechaHasta']."'
+            OR reserva_FechaDesde BETWEEN '".$json_Reserva['vld_ReservaFechaDesde']."' AND '".$json_Reserva['vld_ReservaFechaHasta']."')";
         
     $sql_Query = $sql_DB->query($sql_VerificarDisponibilidad);
     $sql_Fila = $sql_Query->fetch(PDO::FETCH_OBJ);
