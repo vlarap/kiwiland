@@ -1,0 +1,55 @@
+[23-Sep-2020 18:47:22 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND reserva_Id = 34' at line 5' in /home/qmo/public_html/clientes/kiwiland/models/Maestros/Clientes/sel_Cliente.php:120
+Stack trace:
+#0 /home/qmo/public_html/clientes/kiwiland/models/Maestros/Clientes/sel_Cliente.php(120): PDO->query('SELECT   valora...')
+#1 {main}
+  thrown in /home/qmo/public_html/clientes/kiwiland/models/Maestros/Clientes/sel_Cliente.php on line 120
+[13-Oct-2020 12:55:51 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.416-4' at line 15' in /home/qmo/public_html/clientes/kiwiland/models/Maestros/Clientes/sel_Cliente.php:162
+Stack trace:
+#0 /home/qmo/public_html/clientes/kiwiland/models/Maestros/Clientes/sel_Cliente.php(162): PDO->query('SELECT  cliente...')
+#1 {main}
+  thrown in /home/qmo/public_html/clientes/kiwiland/models/Maestros/Clientes/sel_Cliente.php on line 162
+[31-Oct-2020 20:37:07 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 15' in /home/qmo/public_html/clientes/kiwiland/models/Maestros/Clientes/sel_Cliente.php:162
+Stack trace:
+#0 /home/qmo/public_html/clientes/kiwiland/models/Maestros/Clientes/sel_Cliente.php(162): PDO->query('SELECT  cliente...')
+#1 {main}
+  thrown in /home/qmo/public_html/clientes/kiwiland/models/Maestros/Clientes/sel_Cliente.php on line 162
+[31-Oct-2020 20:41:07 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Javiera' in 'where clause'' in /home/qmo/public_html/clientes/kiwiland/models/Maestros/Clientes/sel_Cliente.php:162
+Stack trace:
+#0 /home/qmo/public_html/clientes/kiwiland/models/Maestros/Clientes/sel_Cliente.php(162): PDO->query('SELECT  cliente...')
+#1 {main}
+  thrown in /home/qmo/public_html/clientes/kiwiland/models/Maestros/Clientes/sel_Cliente.php on line 162
+[29-Nov-2020 21:48:35 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 15' in /home/qmo/public_html/clientes/kiwiland/models/Maestros/Clientes/sel_Cliente.php:162
+Stack trace:
+#0 /home/qmo/public_html/clientes/kiwiland/models/Maestros/Clientes/sel_Cliente.php(162): PDO->query('SELECT  cliente...')
+#1 {main}
+  thrown in /home/qmo/public_html/clientes/kiwiland/models/Maestros/Clientes/sel_Cliente.php on line 162
+[30-Nov-2020 17:31:49 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.684-9' at line 15' in /home/qmo/public_html/clientes/kiwiland/models/Maestros/Clientes/sel_Cliente.php:162
+Stack trace:
+#0 /home/qmo/public_html/clientes/kiwiland/models/Maestros/Clientes/sel_Cliente.php(162): PDO->query('SELECT  cliente...')
+#1 {main}
+  thrown in /home/qmo/public_html/clientes/kiwiland/models/Maestros/Clientes/sel_Cliente.php on line 162
+[03-Dec-2020 17:16:26 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column '15609451k' in 'where clause'' in /home/qmo/public_html/clientes/kiwiland/models/Maestros/Clientes/sel_Cliente.php:162
+Stack trace:
+#0 /home/qmo/public_html/clientes/kiwiland/models/Maestros/Clientes/sel_Cliente.php(162): PDO->query('SELECT  cliente...')
+#1 {main}
+  thrown in /home/qmo/public_html/clientes/kiwiland/models/Maestros/Clientes/sel_Cliente.php on line 162
+[04-Dec-2020 18:55:56 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 15' in /home/qmo/public_html/clientes/kiwiland/models/Maestros/Clientes/sel_Cliente.php:162
+Stack trace:
+#0 /home/qmo/public_html/clientes/kiwiland/models/Maestros/Clientes/sel_Cliente.php(162): PDO->query('SELECT  cliente...')
+#1 {main}
+  thrown in /home/qmo/public_html/clientes/kiwiland/models/Maestros/Clientes/sel_Cliente.php on line 162
+[05-Dec-2020 19:16:15 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column '19179814u' in 'where clause'' in /home/qmo/public_html/clientes/kiwiland/models/Maestros/Clientes/sel_Cliente.php:162
+Stack trace:
+#0 /home/qmo/public_html/clientes/kiwiland/models/Maestros/Clientes/sel_Cliente.php(162): PDO->query('SELECT  cliente...')
+#1 {main}
+  thrown in /home/qmo/public_html/clientes/kiwiland/models/Maestros/Clientes/sel_Cliente.php on line 162
+[07-Dec-2020 20:49:13 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column '17431148k' in 'where clause'' in /home/qmo/public_html/clientes/kiwiland/models/Maestros/Clientes/sel_Cliente.php:162
+Stack trace:
+#0 /home/qmo/public_html/clientes/kiwiland/models/Maestros/Clientes/sel_Cliente.php(162): PDO->query('SELECT  cliente...')
+#1 {main}
+  thrown in /home/qmo/public_html/clientes/kiwiland/models/Maestros/Clientes/sel_Cliente.php on line 162
+[07-Dec-2020 21:30:37 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'k' in 'where clause'' in /home/qmo/public_html/clientes/kiwiland/models/Maestros/Clientes/sel_Cliente.php:162
+Stack trace:
+#0 /home/qmo/public_html/clientes/kiwiland/models/Maestros/Clientes/sel_Cliente.php(162): PDO->query('SELECT  cliente...')
+#1 {main}
+  thrown in /home/qmo/public_html/clientes/kiwiland/models/Maestros/Clientes/sel_Cliente.php on line 162
